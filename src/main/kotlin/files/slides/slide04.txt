@@ -1,0 +1,27 @@
++----------------------------------------------------------------------------------------------+
+|    ___   _  _       PART 4 / 10                                  files: data and images      |
+|   / _ \ | || |                                                                               |
+|  | | | || || |_     YOUR COPY: EDITING THE DATA                                              |
+|  | |_| ||__   _|    ~~~~~~~~~~~~~~~~~~~~~~~~~~~                                              |
+|   \___/    |_|      new: exists(), toDoubleOrNull(), ?:                                      |
+| ============================================================================================ |
+|                                                                                              |
+|                                               * if my-planets.csv exists, use it             |
+|     planets.csv  --copy-->  my-planets.csv    * null: no value, nothing                      |
+|                             + Pluto           * a ?: b  -  'a, or else b'                    |
+|                             + a color column                                                 |
+|                                               val distance = row["distance_million_km"]      |
+|             .   .  o  .                           ?.toDoubleOrNull()                         |
+|          .    .---.     .                     if (distance == null) {                        |
+|        o    (  sun  )  .    o                     problems = problems + 1                    |
+|          .   '---'      .                         continue      // skip this row             |
+|             .    O   .                        }                                              |
+|                                                                                              |
+|     "12x04".toDouble()        crash!         +-- EXERCISE 4 -------------------------------+ |
+|     "12x04".toDoubleOrNull()  null           | a) add Pluto. does it fit?                  | |
+|     row["color"] ?: "pink"                   | b) a color column: #3366ff                  | |
+|                                              | c) a typo on purpose                        | |
+|                                              | d) invent your own planet                   | |
+|                                              +---------------------------------------------+ |
+|                                                                                              |
++----------------------------------------------------------------------------------------------+

@@ -1,0 +1,27 @@
++----------------------------------------------------------------------------------------------+
+|    ___   ____       PART 2 / 10                                  files: data and images      |
+|   / _ \ |___ \                                                                               |
+|  | | | |  __) |     FROM TEXT TO NUMBERS                                                     |
+|  | |_| | / __/      ~~~~~~~~~~~~~~~~~~~~                                                     |
+|   \___/ |_____|     new: toDouble(), drawing with data                                       |
+| ============================================================================================ |
+|                                                                                              |
+|                                               * text from a file -> toDouble()               |
+|     "142984"  .toDouble()  ->  142984.0       * 1 pixel = 1000 km                            |
+|      text                        number       * a var x: where the next planet goes          |
+|                                                                                              |
+|     142984.0 / 1000.0  =  143 pixels          val diameter =                                 |
+|                                                   row.getValue("diameter_km").toDouble()     |
+|                   .-----.                     val size = diameter / 1000.0                   |
+|                 .'       '.    .---.          drawer.circle(x + size / 2.0, 360.0,           |
+|     . . . .    |  Jupiter  |  ( Sat )  o  o                 size / 2.0)                      |
+|                 '.       .'    '---'          x = x + size + 25.0                            |
+|                   '-----'                                                                    |
+|                                              +-- EXERCISE 2 -------------------------------+ |
+|     divide everything by the same number:    | a) divide by 800 or 2000                    | |
+|     the sizes stay honest                    | b) small to big: sortedBy { }               | |
+|                                              | c) the length of a day as bars              | |
+|                                              | d) add up all diameters                     | |
+|                                              +---------------------------------------------+ |
+|                                                                                              |
++----------------------------------------------------------------------------------------------+

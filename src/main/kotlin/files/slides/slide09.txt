@@ -1,0 +1,27 @@
++----------------------------------------------------------------------------------------------+
+|    ___    ___       PART 9 / 10                                  files: data and images      |
+|   / _ \  / _ \                                                                               |
+|  | | | || (_) |     YOUR OWN IMAGES                                                          |
+|  | |_| | \__, |     ~~~~~~~~~~~~~~~                                                          |
+|   \___/    /_/      new: data/my-images, tiles, source rectangles                            |
+| ============================================================================================ |
+|                                                                                              |
+|                                               * no images yet? the archive is used           |
+|     data/my-images/   <- your photos here     * iPhone .heic: export as .jpg first           |
+|     .jpg or .png, around 1000 px wide         * image(image, source, target)                 |
+|                                                                                              |
+|     +---+---+---+---+                         val source = Rectangle(                        |
+|     | A | C | B | A |   every tile:               column * image.width / tiles,              |
+|     +---+---+---+---+   the SAME part             row * image.height / tiles,                |
+|     | B | A | C | C |   of a RANDOM               image.width / tiles,                       |
+|     +---+---+---+---+   image                     image.height / tiles)                      |
+|     | C | B | A | B |                         drawer.image(image, source, target)            |
+|     +---+---+---+---+                                                                        |
+|                                              +-- EXERCISE 9 -------------------------------+ |
+|     + / -: more or fewer tiles               | a) 5 of your own images                     | |
+|     r: new mix     space: save               | b) two faces, mixed                         | |
+|                                              | c) narrow strips                            | |
+|                                              | d) tiles that change by themselves          | |
+|                                              +---------------------------------------------+ |
+|                                                                                              |
++----------------------------------------------------------------------------------------------+

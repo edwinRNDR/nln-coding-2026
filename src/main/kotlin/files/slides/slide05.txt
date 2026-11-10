@@ -1,0 +1,27 @@
++----------------------------------------------------------------------------------------------+
+|    ___   ____       PART 5 / 10                                  files: data and images      |
+|   / _ \ | ___|                                                                               |
+|  | | | ||___ \      DATA FROM THE INTERNET                                                   |
+|  | |_| | ___) |     ~~~~~~~~~~~~~~~~~~~~~~                                                   |
+|   \___/ |____/      new: curl, a scatter plot, missing values                                |
+| ============================================================================================ |
+|                                                                                              |
+|                                               * curl downloads a file                        |
+|     $ curl -L -o data/csv/penguins.csv \      * -L follow, -o save as                        |
+|       https://raw.githubusercontent.com/      * empty cells: toDoubleOrNull()                |
+|      mwaskom/seaborn-data/master/penguins.csv                                                |
+|                                               val bill = row.getValue("bill_length_mm")      |
+|     flipper  ^         .  :. .:                   .toDoubleOrNull()                          |
+|              |        :.:.:  . Gentoo         if (bill == null) continue                     |
+|              |   .. .  ':.:                   val x = map(30.0, 60.0, 80.0, 680.0, bill)     |
+|              |  .:.:. Chinstrap                                                              |
+|              | :.:.:.                                                                        |
+|              | .:.: Adelie                                                                   |
+|              +-------------------->          +-- EXERCISE 5 -------------------------------+ |
+|                          bill                | a) body_mass_g as y                         | |
+|     (Windows: curl.exe)                      | b) bigger dots for males                    | |
+|                                              | c) only one island                          | |
+|                                              | d) find your own CSV online                 | |
+|                                              +---------------------------------------------+ |
+|                                                                                              |
++----------------------------------------------------------------------------------------------+

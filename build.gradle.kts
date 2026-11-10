@@ -22,6 +22,7 @@ dependencies {
 
     implementation(orx.bundles.basic)
     implementation(orx.olive)
+    implementation(libs.csv)
 
     implementation(libs.kotlinx.coroutines.core)
     implementation(libs.kotlinx.serialization.core)

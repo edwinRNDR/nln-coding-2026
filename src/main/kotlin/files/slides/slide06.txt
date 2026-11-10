@@ -1,0 +1,27 @@
++----------------------------------------------------------------------------------------------+
+|    ___    __        PART 6 / 10                                  files: data and images      |
+|   / _ \  / /_                                                                                |
+|  | | | || '_ \      YOUR OWN DATA                                                            |
+|  | |_| || (_) |     ~~~~~~~~~~~~~                                                            |
+|   \___/  \___/      new: column names, ; separators, arrow keys                              |
+| ============================================================================================ |
+|                                                                                              |
+|                                               * rows[0].keys: the column names               |
+|     my-data.csv                               * find the columns with only numbers           |
+|     +--------------------------------+        * spreadsheets: export as CSV                  |
+|     | day;sleep;tea;mood             |                                                       |
+|     | mon;7,5;3;6                    |        val separator =                                |
+|     | tue;6;5;4                      |            if (firstLine.contains(";")) ';'           |
+|     +--------------------------------+            else ','                                   |
+|                                               csvReader { delimiter = separator }            |
+|     ; instead of ,  -> delimiter = ';'            .readAllWithHeader(file)                   |
+|     7,5 instead of 7.5 -> replace(',', '.')                                                  |
+|                                                                                              |
+|     mon  [########...]  7.5                  +-- EXERCISE 6 -------------------------------+ |
+|     tue  [######.....]  6.0                  | a) make my-data.csv                         | |
+|                  <- -> other column          | b) export from a spreadsheet                | |
+|                                              | c) circles instead of bars                  | |
+|                                              | d) a picture that fits the data             | |
+|                                              +---------------------------------------------+ |
+|                                                                                              |
++----------------------------------------------------------------------------------------------+

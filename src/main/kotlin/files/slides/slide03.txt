@@ -1,0 +1,27 @@
++----------------------------------------------------------------------------------------------+
+|    ___   _____      PART 3 / 10                                  files: data and images      |
+|   / _ \ |___ /                                                                               |
+|  | | | |  |_ \      FITTING NUMBERS IN THE WINDOW                                            |
+|  | |_| | ___) |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~                                            |
+|   \___/ |____/      new: map(...), colours from numbers                                      |
+| ============================================================================================ |
+|                                                                                              |
+|                                               * map: from one range to another               |
+|     map(57.9, 4515.0, 60.0, 660.0, distance)  * find min and max with a loop                 |
+|                                               * mouse over a planet: its numbers             |
+|     from: 57.9 ----------------------- 4515.0                                                |
+|             |                          |      val x = map(minDistance, maxDistance,          |
+|             v                          v                  60.0, 660.0, distance)             |
+|     to:     60 ----------------------- 660    val t = map(minTemp, maxTemp,                  |
+|                                                           0.0, 1.0, temp)                    |
+|     like reading a ruler                      drawer.fill =                                  |
+|                                                   ColorRGBa.BLUE.mix(ColorRGBa.RED, t)       |
+|     temperature -> colour:                                                                   |
+|     BLUE.mix(RED, t)                         +-- EXERCISE 3 -------------------------------+ |
+|     t = 0.0 [####......] t = 1.0             | a) use sqrt(distance)                       | |
+|       cold                  hot              | b) a vertical line                          | |
+|                                              | c) day_hours as the radius                  | |
+|                                              | d) orbits around the Sun                    | |
+|                                              +---------------------------------------------+ |
+|                                                                                              |
++----------------------------------------------------------------------------------------------+

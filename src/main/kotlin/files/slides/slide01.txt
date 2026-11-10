@@ -1,0 +1,27 @@
++----------------------------------------------------------------------------------------------+
+|    ___   _          PART 1 / 10                                  files: data and images      |
+|   / _ \ / |                                                                                  |
+|  | | | || |         READING A CSV FILE                                                       |
+|  | |_| || |         ~~~~~~~~~~~~~~~~~~                                                       |
+|   \___/ |_|         new: csvReader, readAllWithHeader, getValue                              |
+| ============================================================================================ |
+|                                                                                              |
+|                                               * CSV: a table in a text file                  |
+|     planets.csv:                              * the first line has the column names          |
+|     +-------------------------+               * println(...) writes to the console           |
+|     | name,type,diameter_km   | <- names                                                     |
+|     | Mercury,rocky,4879      | <- row 0      val rows = csvReader()                         |
+|     | Venus,rocky,12104       | <- row 1          .readAllWithHeader(                        |
+|     | Earth,rocky,12756       |                       File("data/csv/planets.csv"))          |
+|     +-------------------------+               for (row in rows) {                            |
+|                                                   drawer.text(row.getValue("name"), ...)     |
+|     comma separated values:                   }                                              |
+|     a table, written as plain text                                                           |
+|                                              +-- EXERCISE 1 -------------------------------+ |
+|     row.getValue("name")  ->  "Mercury"      | a) look at the console                      | |
+|     everything is TEXT, even "4879"          | b) show mean_temp_c, with °C                | |
+|                                              | c) only the gas giants                      | |
+|                                              | d) read image-archive.csv                   | |
+|                                              +---------------------------------------------+ |
+|                                                                                              |
++----------------------------------------------------------------------------------------------+

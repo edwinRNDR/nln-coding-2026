@@ -1,0 +1,27 @@
++----------------------------------------------------------------------------------------------+
+|    ___    ___       PART 8 / 10                                  files: data and images      |
+|   / _ \  ( _ )                                                                               |
+|  | | | | / _ \      RANDOM COMPOSITIONS                                                      |
+|  | |_| || (_) |     ~~~~~~~~~~~~~~~~~~~                                                      |
+|   \___/  \___/      new: Random(seed), nextDouble(), random()                                |
+| ============================================================================================ |
+|                                                                                              |
+|                                               * the computer makes the choices               |
+|     seed 1:            seed 2:                * a new Random(seed) every frame               |
+|     +-----------+      +-----------+          * write down the seeds you like                |
+|     |  +--+     |      | +-----+   |                                                         |
+|     | +|-+|--+  |      | |  +--|-+ |          val random = Random(seed)                      |
+|     | |+--+  |  |      | +--|--+ | |          val image = images.random(random)              |
+|     | +---/\-+ |      |    +----+ |           val w = random.nextDouble(80.0, 300.0)         |
+|     +-----------+      +-----------+          drawer.imageFit(image, box,                    |
+|                                                   horizontalPosition =                       |
+|     the same seed = the same 'random'                 random.nextDouble(-1.0, 1.0))          |
+|     choices, in the same order                                                               |
+|                                              +-- EXERCISE 8 -------------------------------+ |
+|     r: new seed     space: save              | a) number and size of pieces                | |
+|                                              | b) round pieces or strips                   | |
+|                                              | c) a new seed every 2 seconds               | |
+|                                              | d) not random at all                        | |
+|                                              +---------------------------------------------+ |
+|                                                                                              |
++----------------------------------------------------------------------------------------------+

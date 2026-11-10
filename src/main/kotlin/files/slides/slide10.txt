@@ -1,0 +1,27 @@
++----------------------------------------------------------------------------------------------+
+|   _   ___           PART 10 / 10                                 files: data and images      |
+|  / | / _ \                                                                                   |
+|  | || | | |         A COLLAGE TOOL                                                           |
+|  | || |_| |         ~~~~~~~~~~~~~~                                                           |
+|  |_| \___/          new: images + data + layers + WindowedGUI                                |
+| ============================================================================================ |
+|                                                                                              |
+|                                               * everything together: files, data,            |
+|     +- Collage -------------+                   random, layers and a GUI                     |
+|     | seed      ===o-----   |  3 captions     * space: save, write down the seed             |
+|     | [ new collage ]       |    from the csv                                                |
+|     | images    [Archive v] |  2 pieces:      for ((mode, pieceLayer) in pieceLayers) {      |
+|     | pieces    ====o----   |    blend, mask,     pieceLayer.enabled =                       |
+|     | blend     [Screen  v] |    blur                 mode == settings.blend                 |
+|     | mask      [Circle  v] |  1 background   }                                              |
+|     | blur      =o-------   |                 composite.draw(drawer)                         |
+|     | captions  [x]         |                                                                |
+|     +-----------------------+                                                                |
+|                                              +-- EXERCISE 10 ------------------------------+ |
+|     one pieces layer per blend mode,         | a) a border slider                          | |
+|     only the chosen one is enabled           | b) your own mask                            | |
+|                                              | FINAL: a collage from your own              | |
+|                                              | images AND your own data                    | |
+|                                              +---------------------------------------------+ |
+|                                                                                              |
++----------------------------------------------------------------------------------------------+

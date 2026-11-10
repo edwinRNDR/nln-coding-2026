@@ -1,0 +1,27 @@
++----------------------------------------------------------------------------------------------+
+|    ___   _____      PART 7 / 10                                  files: data and images      |
+|   / _ \ |___  |                                                                              |
+|  | | | |   / /      A FOLDER FULL OF IMAGES                                                  |
+|  | |_| |  / /       ~~~~~~~~~~~~~~~~~~~~~~~                                                  |
+|   \___/  /_/        new: listFiles(), filter, a list of images                               |
+| ============================================================================================ |
+|                                                                                              |
+|                                               * ask the folder for its files                 |
+|     data/image-archive/                       * keep only .jpg and .png                      |
+|       girl-with-a-pearl-earring.jpg           * the csv tells about each image               |
+|       the-great-wave.jpg                                                                     |
+|       the-starry-night.jpg  ... (10)          val images = File("data/image-archive")        |
+|                                                   .listFiles()                               |
+|     +----+ +----+ +----+ +----+                   .filter { it.extension == "jpg" }          |
+|     |    | |    | |    | |    |   click:          .sortedBy { it.name }                      |
+|     +----+ +----+ +----+ +----+   big +           .map { loadImage(it) }                     |
+|     +----+ +----+ +----+ +----+   title                                                      |
+|     |    | |    | |    | |    |   from the                                                   |
+|     +----+ +----+ +----+ +----+   csv        +-- EXERCISE 7 -------------------------------+ |
+|                                              | a) 3 columns                                | |
+|     file name  <--->  image-archive.csv      | b) Cover instead of Contain                 | |
+|                                              | c) sort by year                             | |
+|                                              | d) a timeline 1500 - 2000                   | |
+|                                              +---------------------------------------------+ |
+|                                                                                              |
++----------------------------------------------------------------------------------------------+
